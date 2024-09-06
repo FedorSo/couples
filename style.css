@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -136,3 +136,19 @@ body {
     background: #143312d3;
     transform: scale(0.95);
 }
+
+.confetti {
+    position: absolute;
+    width: 90%;
+    min-height: 100vh;
+    z-index: -1;
+    top: 0;
+    margin: 0;
+}
+
+@keyframes moveDown {
+    100% {
+      top: 110%;
+      transform: rotate(360deg);
+    }
+  }
